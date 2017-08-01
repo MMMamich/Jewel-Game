@@ -1,5 +1,28 @@
+body{
+    
+    margin:0px;
+    padding:0px;
+    /*background-color: #b7b3b2;*/
+    background: linear-gradient(#b7b3b2, #444547);
+}
+
+h1{
+    
+    text-align: center;
+    color: purple;
+    
+}
+
+p{
+    
+    text-align: center;
+    font-family: "lobster", cursive;
+    font-size: 16px;
+    font-weight: 800;
+}
 #randomStartBox{
     
+    margin-left:40%;
     width: 200px;
     height: 100px;
     border: 1px solid #42346b;
@@ -7,8 +30,27 @@
 }
 
 img{
-    
+   
    width: 100px;
    height: 100px;
+   border: 2px outset black;
+   border-radius: 50%;
+    
+}
+
+#jewel1{
+    
+    margin-left:29%;
+    
+}
+
+#score{
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom:10px;
+    margin-left:40%;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #42346b;
     
 }

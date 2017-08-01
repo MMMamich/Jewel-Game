@@ -77,6 +77,10 @@ function scoreEqualsRandom(){
         alert("Sorry, try again loser...");
         lossCount++;
         $("#loses").html(lossCount);
+        resetFunction();                    //After one game -->  keeps going to this else if 
+        
+    }else {
+        
         resetFunction();
         
     }
@@ -84,18 +88,19 @@ function scoreEqualsRandom(){
 }
 
 function resetFunction(){
-  
-var randomNumber = Math.floor((Math.random() * 100) + 20); //Random number user tries to get too
+
+ randomNumber = Math.floor((Math.random() * 100) + 20); //Random number user tries to get too
     
-var randomCrystalOne = Math.floor((Math.random() * 3) + 1);
-var randomCrystalTwo = Math.floor((Math.random() * 7) + 1);
-var randomCrystalThree = Math.floor((Math.random() * 6) + 1);
-var randomCrystalFour = Math.floor((Math.random() * 11) + 1);
+ randomCrystalOne = Math.floor((Math.random() * 3) + 1);
+ randomCrystalTwo = Math.floor((Math.random() * 7) + 1); //SCOPE!!! MAKE SURE TO NOT USE VAR TO 
+ randomCrystalThree = Math.floor((Math.random() * 6) + 1); // REFERENCE GLOBAL VARIABLES
+ randomCrystalFour = Math.floor((Math.random() * 11) + 1);
     
-var jewelMeter = 0;
+ jewelMeter = 0;
    
 $("#randomNumberStart").html(randomNumber);
 $("#score").html(jewelMeter);
  
 }
 
+resetFunction();
